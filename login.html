@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Live 로그인창</title>
+  <title>Live실시간 강의 : 로그인</title>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <style>
+  #list ul{
+    width:350px;
+    margin:0 auto;
+  }
+  #list ul li{
+    float:left;
+    width:33%;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+  }
+  #txt {
+    margin-bottom:30px;
+  }
   body:before{
     content:'';
     height:100%;
@@ -51,7 +65,7 @@
     width: 100%;
     height:auto;
     line-height:normal;
-    padding: .8em .5em;
+    padding: .6em .3em;
     font-family:inherit;
     border-radius:0;
     outline-style:none;
@@ -63,7 +77,7 @@
     position:absolute;
     top: 1px;
     left: 1px;
-    padding: .8em .5em;
+    padding: .6em .3em;
     color: #999;
     cursor: text;
   }
@@ -78,36 +92,37 @@
     font-weight:700;
   }
   select{
-    margin-right:100px;
+    margin-left:500px;
     height:auto;
   }
   li{
     list-style:none;
-    text-align:center
-
   }
   </style>
 </head>
 <body>
-<p align="right"><select name="language">
+<p align="center"><select name="language">
   <option value="한국어">한국어</option>
   <option value="English">English</option>
 </select></p>
 <h1><a href="index.html">LIVE</h1></a>
-<div align="middle" class="textbox">
+<p align="middle" id="txt">
+<span class="textbox">
   <label for="ex_input"></label>
   <input type="text" id="ex_input" placeholder="아이디">
-</div>
-<div  align="middle" class="textbox">
+</span> <br>
+<span class="textbox">
   <label for="ex_input2"></label>
   <input type="password" id="ex_input2" placeholder="패스워드">
-</div>
+</span></p>
 <p align="middle"><button>로그인</button></p>
-<p align="middle"><input type="checkbox" name="chk_login" value="자동로그인">자동로그인</p>
-<ul>
+<p align="middle" id="chk"><input type="checkbox" name="chk_login" value="자동로그인">자동로그인</p>
+<div id="list">
+<ul style="padding-left:0px;">
   <li><a href="">아이디 찾기</a></li>
   <li><a href="">비밀번호 찾기</a></li>
   <li><a href="">회원가입</a></li>
 </ul>
+</div>
 </body>
 </html>
