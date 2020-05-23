@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Live실시간 강의 : 회원가입</title>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<style>
+#txt1{ display:block; margin:0 auto; }
+#txt2{ display:block; margin:0 auto; }
+#txt3{ display:block; margin:0 auto; }
+#txt4{ display:block; margin:0 auto; }
+#txt5{ display:inline-block; margin:0 auto; }
+#txt6{ display:inline-block; margin:0 auto; }
+#sel1{ display:inline-block; margin:0 auto; }
+#sel2{ display:block; margin:0 auto; }
+#btn1{ display:block; margin:0 auto; }
+a{
+  text-decoration:none;
+  color:#0069a5;
+}
+h1{
+  font-size:70px;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+}
+h3{
+  font-size:15px;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+}
+</style>
+</head>
+<body>
+<h1><a href="index.html">LIVE</a></h1>
+<h3>이름</h3>
+<input type="text" id="txt1">
+<h3>아이디</h3>
+<input type="text" id="txt2">
+<h3>비밀번호</h3>
+<input type="password" id="txt3">
+<h3>비밀번호 재확인</h3>
+<input type="password" id="txt4">
+<h3>생년월일</h3>
+<p align="center">
+<input type="text" size=10px id="txt5">
+<select name="month" id="sel1">
+  <option value="월">월</option>
+  <option value="january">1</option>
+  <option value="february">2</option>
+  <option value="march">3</option>
+  <option value="april">4</option>
+  <option value="may">5</option>
+  <option value="june">6</option>
+  <option value="july">7</option>
+  <option value="august">8</option>
+  <option value="september">9</option>
+  <option value="october">10</option>
+  <option value="november">11</option>
+  <option value="december">12</option>
+</select>
+<input type="text" size=10px id="txt6">
+</p>
+<h3>성별</h3>
+<select name="gender" id="sel2">
+  <option value="성별">성별</option>
+  <option value="male">남자</option>
+  <option value="female">여자</option>
+</select> <br><br>
+<input type="button" value="가입하기" id="btn1">
+</body>
+</html>
